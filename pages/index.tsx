@@ -214,7 +214,8 @@ const HighlightsSection = () => {
       </HighlightsItem>
       <HighlightsTestimonialItem
         name="Portaria para condomínios"
-        avatar="/static/images/avatar.jpg"
+        description=""
+        avatar="/static/images/condominium.png"
         gradient={["pink.200", "purple.500"]}
       >
         Nossos profissionais de portaria são treinados para gerenciar o
