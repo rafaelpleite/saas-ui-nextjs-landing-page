@@ -65,17 +65,15 @@ const Home: NextPage = () => {
   return (
     <Box>
       <SEO
-        title="Saas UI Landingspage"
-        description="Free SaaS landingspage starter kit"
+        title="VAS Serviços"
+        description="VAS Serviços: Limpeza, Portaria, Jardinagem e Recepção"
       />
       <Box>
         <HeroSection />
 
         <HighlightsSection />
 
-        <FeaturesSection />
-
-        <TestimonialsSection />
+        {/* <FeaturesSection /> */}
 
         <PricingSection />
 
@@ -97,45 +95,26 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Build beautiful
-                <Br /> software faster
-              </FallInPlace>
+              Soluções sob medida em <Text as="span" fontWeight="bold" color="purple.500">limpeza</Text>,&nbsp;
+              <Text as="span" fontWeight="bold" color="purple.500">recepção</Text>, <Br />&nbsp;
+              <Text as="span" fontWeight="bold" color="purple.500">jardinagem</Text>&nbsp;e&nbsp;
+              <Text as="span" fontWeight="bold" color="purple.500">portaria</Text>&nbsp;para o seu espaço.
+            </FallInPlace>
+            
+
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{" "}
-                build intuitive SaaS products with speed.
+                <Em>Experiência</Em> e <Em>qualidade</Em> em serviços que <Br />
+                garantem tranquilidade e excelência no seu dia a dia.
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
-              <HStack pt="4" pb="12" spacing="8">
-                <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
-              </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup">
-                  Sign Up
-                </ButtonLink>
-                <ButtonLink
-                  size="lg"
-                  href="https://demo.saas-ui.dev"
-                  variant="outline"
-                  rightIcon={
-                    <Icon
-                      as={FiArrowRight}
-                      sx={{
-                        transitionProperty: "common",
-                        transitionDuration: "normal",
-                        ".chakra-button:hover &": {
-                          transform: "translate(5px)",
-                        },
-                      }}
-                    />
-                  }
-                >
-                  View demo
+                <ButtonLink colorScheme="primary" size="lg" href="https://api.whatsapp.com/send?phone=5511988221514">
+                  Entre em contato
                 </ButtonLink>
               </ButtonGroup>
             </FallInPlace>
@@ -152,7 +131,7 @@ const HeroSection: React.FC = () => {
             <FallInPlace delay={1}>
               <Box overflow="hidden" height="100%">
                 <Image
-                  src="/static/screenshots/list.png"
+                  src="/static/screenshots/porteiro.png"
                   layout="fixed"
                   width={1200}
                   height={762}
@@ -174,33 +153,33 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: "Accessible",
+            title: 'Profissionalismo',
             icon: FiSmile,
-            description: "All components strictly follow WAI-ARIA standards.",
+            description: 'Nossos profissionais são altamente treinados e qualificados, garantindo excelência em cada serviço prestado.',
             iconPosition: "left",
             delay: 0.6,
           },
           {
-            title: "Themable",
+            title: 'Atendimento Personalizado',
             icon: FiSliders,
             description:
-              "Fully customize all components to your brand with theme support and style props.",
+              'Oferecemos soluções sob medida, adaptadas às necessidades específicas de cada cliente e ambiente.',
             iconPosition: "left",
             delay: 0.8,
           },
           {
-            title: "Composable",
+            title: 'Rapidez e Eficiência',
             icon: FiGrid,
             description:
-              "Compose components to fit your needs and mix them together to create new ones.",
+              'Cumprimos os prazos acordados com agilidade, sem comprometer a qualidade do serviço.',
             iconPosition: "left",
             delay: 1,
           },
           {
-            title: "Productive",
+            title: 'Cobertura Completa',
             icon: FiThumbsUp,
             description:
-              "Designed to reduce boilerplate and fully typed, build your product at speed.",
+              'Atuação em toda a Grande São Paulo, garantindo um atendimento abrangente e eficaz.',
             iconPosition: "left",
             delay: 1.1,
           },
@@ -216,90 +195,47 @@ const HighlightsSection = () => {
 
   return (
     <Highlights>
-      <HighlightsItem colSpan={[1, null, 2]} title="Core components">
+      <HighlightsItem colSpan={[1, null, 2]} title="Limpeza pós-obra">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started for free with <Em>30+ open source components</Em>.
-            Including authentication screens with Clerk, Supabase and Magic.
-            Fully functional forms with React Hook Form. Data tables with React
-            Table.
+            A VAS oferece uma limpeza detalhada para remover resíduos e sujeiras após a
+            conclusão de obras, garantindo que o espaço esteja pronto para uso com total
+            higiene e organização.
           </Text>
-
-          <Flex
-            rounded="full"
-            borderWidth="1px"
-            flexDirection="row"
-            alignItems="center"
-            py="1"
-            ps="8"
-            pe="2"
-            bg="primary.900"
-            _dark={{ bg: "gray.900" }}
-          >
-            <Box>
-              <Text color="yellow.400" display="inline">
-                yarn add
-              </Text>{" "}
-              <Text color="cyan.300" display="inline">
-                @saas-ui/react
-              </Text>
-            </Box>
-            <IconButton
-              icon={hasCopied ? <FiCheck /> : <FiCopy />}
-              aria-label="Copy install command"
-              onClick={onCopy}
-              variant="ghost"
-              ms="4"
-              isRound
-              color="white"
-            />
-          </Flex>
         </VStack>
       </HighlightsItem>
-      <HighlightsItem title="Solid foundations">
+      <HighlightsItem title="Limpeza leve">
         <Text color="muted" fontSize="lg">
-          We don&apos;t like to re-invent the wheel, neither should you. We
-          selected the most productive and established tools in the scene and
-          build Saas UI on top of it.
+          Ideal para manutenção de ambientes que
+          necessitam de uma limpeza constante, mas
+          menos intensa. Mantém o local limpo e
+          agradável no dia a dia.
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
-        name="Renata Alink"
-        description="Founder"
+        name="Portaria para condomínios"
         avatar="/static/images/avatar.jpg"
         gradient={["pink.200", "purple.500"]}
       >
-        “Saas UI helped us set up a beautiful modern UI in no time. It saved us
-        hundreds of hours in development time and allowed us to focus on
-        business logic for our specific use-case from the start.”
+        Nossos profissionais de portaria são treinados para gerenciar o
+        controle de entrada e saída, garantindo segurança e acolhimento
+        para moradores e visitantes.
       </HighlightsTestimonialItem>
       <HighlightsItem
         colSpan={[1, null, 2]}
-        title="Start your next idea two steps ahead"
+        title="Controle de acesso em obras"
       >
         <Text color="muted" fontSize="lg">
-          We took care of all your basic frontend needs, so you can start
-          building functionality that makes your product unique.
+          Garantimos a segurança em áreas de construção, controlando o acesso
+          de trabalhadores, fornecedores e visitantes, mantendo a ordem no local.
         </Text>
         <Wrap mt="8">
           {[
-            "authentication",
-            "navigation",
-            "crud",
-            "settings",
-            "multi-tenancy",
-            "layouts",
-            "billing",
-            "a11y testing",
-            "server-side rendering",
-            "documentation",
-            "onboarding",
-            "storybooks",
-            "theming",
-            "upselling",
-            "unit testing",
-            "feature flags",
-            "responsiveness",
+            "Profissionais qualificados",
+            "Flexibilidade de soluções",
+            "Agilidade no atendimento",
+            "Segurança e tranquilidade",
+            "Cobertura abrangente",
           ].map((value) => (
             <Tag
               key={value}
@@ -313,6 +249,20 @@ const HighlightsSection = () => {
           ))}
         </Wrap>
       </HighlightsItem>
+
+      <HighlightsItem colSpan={[1, null, 2]} title="Recepção">
+        <VStack alignItems="flex-start" spacing="8">
+          <Text color="muted" fontSize="xl">
+            Com profissionais capacitados, nosso serviço de recepção proporciona um atendimento cordial e eficiente para clientes e visitantes. Nossos recepcionistas são treinados para gerenciar fluxos de entrada, atender chamadas e oferecer suporte, garantindo uma experiência agradável e organizada.
+          </Text>
+        </VStack>
+      </HighlightsItem>
+      <HighlightsItem title="Jardinagem">
+        <Text color="muted" fontSize="lg">
+          Com profissionais capacitados, nosso serviço de recepção proporciona um atendimento cordial e eficiente para clientes e visitantes. Nossos recepcionistas são treinados para gerenciar fluxos de entrada, atender chamadas e oferecer suporte, garantindo uma experiência agradável e organizada.
+        </Text>
+      </HighlightsItem>
+
     </Highlights>
   );
 };
@@ -328,16 +278,12 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Not your standard
-          <Br /> dashboard template.
+          Atuação em toda grande SP
         </Heading>
       }
       description={
         <>
-          Saas UI Pro includes everything you need to build modern frontends.
-          <Br />
-          Use it as a template for your next product or foundation for your
-          design system.
+          Cobrimos toda a Grande São Paulo, garantindo atendimento rápido e eficiente onde você precisar.
         </>
       }
       align="left"
@@ -417,43 +363,9 @@ const FeaturesSection = () => {
   );
 };
 
-const TestimonialsSection = () => {
-  const columns = React.useMemo(() => {
-    return testimonials.items.reduce<Array<typeof testimonials.items>>(
-      (columns, t, i) => {
-        columns[i % 3].push(t);
-
-        return columns;
-      },
-      [[], [], []]
-    );
-  }, []);
-
-  return (
-    <Testimonials
-      title={testimonials.title}
-      columns={[1, 2, 3]}
-      innerWidth="container.xl"
-    >
-      <>
-        {columns.map((column, i) => (
-          <Stack key={i} spacing="8">
-            {column.map((t, i) => (
-              <Testimonial key={i} {...t} />
-            ))}
-          </Stack>
-        ))}
-      </>
-    </Testimonials>
-  );
-};
-
 const PricingSection = () => {
   return (
     <Pricing {...pricing}>
-      <Text p="8" textAlign="center" color="muted">
-        VAT may be applicable depending on your location.
-      </Text>
     </Pricing>
   );
 };
@@ -468,10 +380,8 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: "Support us by becoming a stargazer! 🚀 ",
-        description:
-          '<img src="https://img.shields.io/github/stars/saas-js/saas-ui.svg?style=social&label=Star" />',
-        href: "https://github.com/saas-js/saas-ui",
+        title: "Entre em contato conosco já! ☎️📞",
+        href: "https://api.whatsapp.com/send?phone=5511988221514",
         action: false,
       },
     },

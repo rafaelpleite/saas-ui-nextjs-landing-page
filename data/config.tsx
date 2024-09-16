@@ -1,15 +1,15 @@
 import { Button } from '@chakra-ui/react'
 import { Link } from '@saas-ui/react'
 import { NextSeoProps } from 'next-seo'
-import { FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { FiCheck } from 'react-icons/fi'
 import { Logo } from './logo'
 
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Saas UI',
-    description: 'The React component library for startups',
+    title: 'VAS ',
+    description: 'Serviços de Limpeza e Portaria',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
@@ -17,23 +17,15 @@ const siteConfig = {
     links: [
       {
         id: 'features',
-        label: 'Features',
+        label: 'Atuação',
       },
       {
         id: 'pricing',
-        label: 'Pricing',
+        label: 'Segurança e Serviços',
       },
       {
         id: 'faq',
-        label: 'FAQ',
-      },
-      {
-        label: 'Login',
-        href: '/login',
-      },
-      {
-        label: 'Sign Up',
-        href: '/signup',
+        label: 'Contato',
         variant: 'primary',
       },
     ],
@@ -41,50 +33,47 @@ const siteConfig = {
   footer: {
     copyright: (
       <>
-        Built by{' '}
-        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link>
+        Feito por {' '}
+        <Link href="https://github.com/rafaelpleite">Rafael Leite</Link>
       </>
     ),
     links: [
       {
-        href: 'mailto:hello@saas-ui.dev',
-        label: 'Contact',
+        href: 'malito:valdeciodasilva1284@gmail.com',
+        label: 'E-mail',
       },
       {
-        href: 'https://twitter.com/saas_js',
-        label: <FaTwitter size="14" />,
+        href: 'https://api.whatsapp.com/send?phone=5511988221514',
+        label: <FaWhatsapp size="14" />,
       },
-      {
-        href: 'https://github.com/saas-js/saas-ui',
-        label: <FaGithub size="14" />,
-      },
+
     ],
   },
   signup: {
-    title: 'Start building with Saas UI',
+    title: 'VAS Serviços',
     features: [
       {
         icon: FiCheck,
-        title: 'Accessible',
-        description: 'All components strictly follow WAI-ARIA standards.',
+        title: 'Profissionalismo',
+        description: 'Nossos profissionais são altamente treinados e qualificados, garantindo excelência em cada serviço prestado.',
       },
       {
         icon: FiCheck,
-        title: 'Themable',
+        title: 'Atendimento Personalizado',
         description:
-          'Fully customize all components to your brand with theme support and style props.',
+          'Oferecemos soluções sob medida, adaptadas às necessidades específicas de cada cliente e ambiente.',
       },
       {
         icon: FiCheck,
-        title: 'Composable',
+        title: 'Rapidez e Eficiência',
         description:
-          'Compose components to fit your needs and mix them together to create new ones.',
+          'Cumprimos os prazos acordados com agilidade, sem comprometer a qualidade do serviço.',
       },
       {
         icon: FiCheck,
-        title: 'Productive',
+        title: 'Cobertura Completa',
         description:
-          'Designed to reduce boilerplate and fully typed, build your product at speed.',
+          'Atuação em toda a Grande São Paulo, garantindo um atendimento abrangente e eficaz.',
       },
     ],
   },

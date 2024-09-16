@@ -1,31 +1,24 @@
 import * as React from 'react'
 
 const faq = {
-  title: 'Frequently asked questions',
+  title: 'Solicite uma Cotação',
   // description: '',
   items: [
     {
-      q: 'How many products can I use Saas UI Pro for?',
+      q: 'Precisando de serviços de limpeza ou portaria para sua obra ou condomínio?',
       a: (
         <>
-          The single license can be used for one commercial application or SaaS
-          product and unlimited internal tools. You can buy as many licenses as
-          you need. <br /> The unlimited license does not have any restrictions.
+          Solicite uma cotação personalizada e descubra como podemos ajudar! Nossa equipe de especialistas está pronta para entender suas necessidades e propor soluções sob medida, garantindo eficiência, qualidade e preços competitivos. Basta entrar em contato conosco e nós cuidaremos de todo o processo, desde a análise até a execução dos serviços. Com a VAS, você tem a tranquilidade de saber que está nas mãos de profissionais qualificados.
         </>
       ),
     },
     {
-      q: 'Can I use Saas UI Pro for client work?',
-      a: "Yes, that's totally up to you, as long as it fits the license you purchase.",
-    },
-    {
-      q: 'Can I use Saas UI Pro for Open Source projects?',
-      a: 'No currently not. A large part of Saas UI is already released under MIT license. We try to give back to the community as much as possible.',
-    },
-    {
-      q: 'Does Saas UI include Figma, Sketch or other design files?',
-      a: 'No, Saas UI does not include any design assets. Maintaining design resources costs a lot of extra effort. We believe small teams can move much faster by designing directly in code, with help of Storybooks.',
-    },
+      q: 'Quais são os benefícios de contratar a VAS?',
+      a: (<>
+        Ao escolher a VAS, você garante a segurança e o bom funcionamento do seu espaço, com profissionais altamente treinados e qualificados para atender às suas necessidades. Nossos serviços são personalizados e adaptados às características de cada ambiente, garantindo eficiência, qualidade e satisfação. Além disso, oferecemos preços competitivos e um atendimento ágil e eficiente, para que você possa contar com a VAS sempre que precisar.
+      </>)
+    }
+
   ],
 }
 
