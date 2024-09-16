@@ -5,6 +5,14 @@ import { FaGithub, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { FiCheck } from 'react-icons/fi'
 import { Logo } from './logo'
 
+
+interface HeaderLink {
+  id?: string;
+  label: string;
+  href?: string;
+  variant?: string;
+}
+
 const siteConfig = {
   logo: Logo,
   seo: {
@@ -28,7 +36,7 @@ const siteConfig = {
         label: 'Contato',
         variant: 'primary',
       },
-    ],
+    ] as HeaderLink[],
   },
   footer: {
     copyright: (
